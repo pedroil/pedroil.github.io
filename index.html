@@ -1,1 +1,150 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>FabAcademy 2016</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]><link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,200' rel='stylesheet' type='text/css'>
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" src="js/input_clear.js"></script>
+<!-- Lightbox -->
+<script type="text/javascript">
+$(function () {
+    $('.latest_gallery a').lightBox();
+});
+</script>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(2000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+
+
+<body id="home">
+<div id="container">
+  <div class="stripe"></div>
+  <div id="content">
+
+    <!-- Header -->
+
+    <div id="header">
+
+      <div id="loader">
+        <img alt="logo" src="img/ajax-loader.gif" />
+      </div>
+
+      <ul class="main_navi">
+
+        <li>
+          <a class="transition" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="transition" href="http://pgarreton.com/web">Portfolio</a>
+        </li>
+       
+      </ul>
+        <a href="index.html">
+          <img alt="" class="logo" src="img/logo.png" /> 
+        </a> 
+
+
+    </div>
+
+
+    <!-- Top Content -->
+
+    <div class="main_content">
+      <div id="top_content">
+      <div id="best_work">
+        <div class="best_work">
+          <h3 class="homeH3">Works</h3>
+
+          <div>
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/1.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" /></a> 
+          </div>
+
+          <div>
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/2.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" /></a> 
+          </div>
+
+          <div class="last_img">
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/3.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" />
+            </a> 
+          </div>
+
+          <div>
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/1.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" /></a> 
+          </div>
+
+          <div>
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/2.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" /></a> 
+          </div>
+
+          <div class="last_img">
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/3.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" />
+            </a> 
+          </div>
+
+          <div>
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/1.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" /></a> 
+          </div>
+
+          <div>
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/2.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" /></a> 
+          </div>
+
+          <div class="last_img">
+            <a class="transition" href="class1.html"><img alt="" src="img/best_work/3.png" /></a> 
+            <a class="transition" href="class1.html"><img alt="" class="view" src="img/linz.png" />
+            </a> 
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <!-- How to Contact Us, What we do --><!-- Latest on the blog --><!-- Social -->
+      
+      <div id="footer"> Pedro Garretón Izquierdo - FabAcademy 2016 Student - Chile -  
+        <a target="_blank" href="http://fablabsantiago.org/">FabLab Santiago</a>  -
+        <a target="_blank" href="http://aconcaguafablab.cl/">Aconcagua Fablab</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

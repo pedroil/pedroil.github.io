@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Class 1 | FabAcademy 2016</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,200' rel='stylesheet' type='text/css'>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(2000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+<body id="view-work">
+<div id="container">
+  <div class="stripe"></div>
+  <div id="content">
+  
+    <!-- Header -->
+
+    <div id="header">
+
+      <div id="loader">
+        <img alt="logo" src="img/ajax-loader.gif" />
+      </div>
+
+      <ul class="main_navi">
+
+        <li>
+          <a class="transition" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="transition" href="http://pgarreton.com/web">Portfolio</a>
+        </li>
+       
+      </ul>
+        <a href="index.html">
+          <img alt="" class="logo" src="img/logo.png" /> 
+        </a> 
+
+
+    </div>
+    <!-- Top Content -->
+    <div class="main_content">
+      <h1 class="title_work">Primer encargo FabAcademy</h1>
+      <div class="view-work">
+      
+      <br/>
+        <div class="title_img">
+          
+          <p class="homework">A ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largoA ver que pasa con un texto largo
+
+       
+          <img alt="coding" class="imgPost" src="img/class1/class1Coding.png" />
+          <img alt="coding" class="imgPostLast" src="img/class1/class1Coding.png" />
+        
+      
+
+
+      </p> 
+
+      </div>
+
+       
+      
+
+
+
+        
+
+        
+        
+        <div class="work_info_text">
+          <h3>Work info:</h3>
+          <h4>Client: <a href="#">www.anysite.net</a></h4>
+          <h4>Tools: <a>HTML+CSS</a>, <a>Photoshop CS5</a>, <a>CSS3</a>, <a>JQuery</a></h4>
+          <div class="description">
+            <h4 class="description">DESCRIPTION:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non leo nisl. Duis lectus odio, semper eu ultricies sit amet, consectetur vel nunc. Nam gravida diam sapien. Nullam aliquet scelerisque enim eget rhoncus. <a href="portfolio.html">View all work..</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer"> Pedro Garretón Izquierdo - FabAcademy 2016 Student - Chile -  
+        <a target="_blank" href="http://fablabsantiago.org/">FabLab Santiago</a>  -
+        <a target="_blank" href="http://aconcaguafablab.cl/">Aconcagua Fablab</a>
+      </div>
+
+        
+      </div>
+  </div>
+</div>
+</body>
+</html>
